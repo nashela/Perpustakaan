@@ -23,13 +23,13 @@
     </div>
     <div class="flex items-center gap-4">
       <input type="text" placeholder="Search" class="border rounded px-3 py-1 text-sm" />
-      <button class="rounded-full border p-2">👤</button>
+      <button class="rounded-full border p-2"><a href="/login">👤</a></button>
     </div>
   </header>
 
     <section class="max-w-4xl mx-auto px-4 py-12">
     <!-- Gambar Utama -->
-    <img src="https://via.placeholder.com/1000x500" alt="Gambar Berita" class="w-full h-auto rounded border mb-8" />
+    <img src="https://siapjak.jakarta.go.id/storage/program/brosur/9f32fc00-b483-405a-9af2-f57112c90d8e.png" alt="Gambar Berita" class="w-full h-auto rounded border mb-8" />
 
     <!-- Judul dan Info Penulis -->
     <h1 class="text-2xl font-bold mb-2">NAMA BERITA</h1>
@@ -51,24 +51,35 @@
         </p>
     </div>
     </section>
-
+    
 <!-- Footer -->
 <footer class="bg-gray-100 mt-10 px-6 py-10 text-sm text-gray-700">
   <div class="grid md:grid-cols-3 gap-6">
     
     <!-- Logo & Info -->
     <div class="flex flex-col items-center md:items-start text-center md:text-left">
-      <div class="w-20 h-20 bg-gray-300 rounded-full mb-4 flex items-center justify-center">Logo</div>
-      <p class="font-semibold">Perpustakaan Anime</p>
-      <p class="mt-1">Jl. Komodo Raya No 1, Komodo Selatan,<br>Komodo, 12456</p>
-      <p>Email: perpusanime@gmail.com</p>
+      <img src="{{ asset('img/logo.jpg') }}" class="w-50 h-20 mb-4 flex items-center justify-center">
+      <!-- <div class="w-20 h-20 bg-gray-300 rounded-full mb-4 flex items-center justify-center">Logo</div> -->
+      <p class="font-semibold">Perpustakaan Luffy</p>
+      <p class="mt-1">1 Chome-9-3 Sannomaru, Naka Ward<br>Nagoya, Aichi 460-0001, Japan</p>
+      <p>Email: perpusluffy@gmail.com</p>
       <p>Telp: 089765432102</p>
     </div>
 
     <!-- Maps -->
     <div class="text-center md:text-left">
       <p class="font-semibold mb-2">Maps</p>
-      <div class="w-full aspect-video bg-gray-300 rounded"></div>
+      <div class="w-[450px] h-[200px] rounded overflow-hidden">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.1236725603935!2d136.8952080011449!3d35.17847000146159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376cfce8c6da3%3A0x78a4b5566ce0eb0d!2sAichi%20Prefectural%20Library!5e0!3m2!1sen!2sid!4v1750660580222!5m2!1sen!2sid" 
+          width="100%" 
+          height="100%" 
+          class="border-0" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </div>
 
 <footer class="relative bg-gray-100 px-6 py-10">
@@ -82,12 +93,11 @@
       <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
     <p class="text-right text-sm">
-      Copyright © 2025 Kel 4 Allright Reserved
+      Copyright © 2025 Shelah Allright Reserved
     </p>
 
   </div>
 </footer>
-
 
 </body>
 </html>

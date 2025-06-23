@@ -21,29 +21,41 @@
     </div>
     <div class="flex items-center gap-4">
       <input type="text" placeholder="Search" class="border rounded px-3 py-1 text-sm" />
-      <button class="rounded-full border p-2">👤</button>
+      <button class="rounded-full border p-2"><a href="/login">👤</a></button>
     </div>
   </header>
 
   <!-- About Us Section -->
-  <section class="text-center py-12 px-4">
-    <h1 class="text-3xl font-bold mb-8">ABOUT US</h1>
-    <div class="w-full max-w-4xl mx-auto h-64 bg-gray-300 mb-10"></div>
-    <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 justify-center">
-      <div class="w-full md:w-1/2 bg-gray-100 p-4 text-left text-sm leading-relaxed">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies dolor. Proin
-          volutpat blandit sapien, at volutpat orci suscipit vel...
-        </p>
-      </div>
-      <div class="w-full md:w-1/2 bg-gray-100 p-4 text-left text-sm leading-relaxed">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies dolor. Proin
-          volutpat blandit sapien, at volutpat orci suscipit vel...
-        </p>
-      </div>
+<section class="text-center py-12 px-4">
+  <h1 class="text-3xl font-bold mb-8">ABOUT US</h1>
+
+  <img src="{{ asset('img/photo_aboutus.jpg') }}"
+       class="w-full max-w-4xl mx-auto h-80 object-cover rounded-lg shadow-md mb-10">
+
+  <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 justify-center">
+    
+    <!-- VISI -->
+    <div class="w-full md:w-1/2 bg-gray-100 p-6 text-left rounded-lg shadow-sm">
+      <h2 class="text-xl font-bold mb-2">VISI</h2>
+      <p class="text-sm leading-relaxed">
+        Menjadi pusat informasi dan pembelajaran yang unggul serta mudah diakses oleh seluruh lapisan masyarakat. Mendukung proses pendidikan dan penelitian dengan menyediakan sumber daya yang lengkap dan berkualitas. Perpustakaan luffy juga berperan aktif dalam mengembangkan budaya literasi dan pembelajaran.
+      </p>
     </div>
-  </section>
+    
+    <!-- MISI -->
+    <div class="w-full md:w-1/2 bg-gray-100 p-6 text-left rounded-lg shadow-sm">
+      <h2 class="text-xl font-bold mb-2">MISI</h2>
+      <ul class="list-decimal list-inside text-sm leading-relaxed space-y-1">
+        <li>Menyediakan akses yang luas dan adil terhadap sumber informasi yang berkualitas.</li>
+        <li>Menciptakan lingkungan belajar yang nyaman, inklusif, dan berbasis teknologi.</li>
+        <li>Mendorong budaya literasi dan riset.</li>
+        <li>Menjalin kerja sama dengan berbagai pihak dalam pengembangan koleksi dan layanan informasi.</li>
+      </ul>
+    </div>
+    
+  </div>
+</section>
+
 
   <!-- Ruang Perpustakaan -->
     <section class="py-12 px-4 max-w-7xl mx-auto">
@@ -54,29 +66,26 @@
         
         <!-- Kartu 1 -->
         <div class="bg-white border rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x200" alt="Ruang 1" class="w-full h-48 object-cover rounded mb-4">
-        <h3 class="font-semibold text-sm mb-2">Ruang 1</h3>
+        <img src="{{ asset('img/ruang_membaca.jpg') }}" alt="Ruang 1" class="w-full h-48 object-cover rounded mb-4">
+        <!-- <h3 class="font-semibold text-sm mb-2">Ruang 1</h3> -->
         <p class="text-sm text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proses interaksi di ruang ini berjalan nyaman karena suasana yang tenang dan pencahayaan alami yang cukup. Sangat cocok untuk membaca dan belajar mandiri.
-        </p>
+        Perpustakaan ini dirancang dengan suasana yang nyaman dan tenang, ideal untuk belajar maupun membaca. Tersedia meja-meja panjang yang cocok untuk diskusi kelompok, dilengkapi kursi dan pencahayaan yang terang.</p>
         </div>
 
         <!-- Kartu 2 -->
         <div class="bg-white border rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x200" alt="Ruang 2" class="w-full h-48 object-cover rounded mb-4">
-        <h3 class="font-semibold text-sm mb-2">Ruang 2</h3>
+        <img src="{{ asset('img/ruang_komputer.jpg') }}" alt="Ruang 2" class="w-full h-48 object-cover rounded mb-4">
+        <!-- <h3 class="font-semibold text-sm mb-2">Ruang 2</h3> -->
         <p class="text-sm text-gray-700">
-            Dilengkapi dengan fasilitas komputer dan akses internet, ruang ini cocok untuk penelitian atau aktivitas digital. Tata ruang ergonomis memberi kenyamanan lebih dalam beraktivitas.
-        </p>
+        Ruang komputer ini tersedia secara gratis untuk pengunjung yang ingin mengerjakan tugas atau melakukan pencarian informasi. Dilengkapi dengan meja, kursi kerja ergonomis, dan komputer yang tertata rapi, ruangan ini didesain untuk mendukung produktivitas dalam suasana yang tenang dan modern.        </p>
         </div>
 
         <!-- Kartu 3 -->
         <div class="bg-white border rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x200" alt="Ruang 3" class="w-full h-48 object-cover rounded mb-4">
-        <h3 class="font-semibold text-sm mb-2">Ruang 3</h3>
+        <img src="{{ asset('img/rak_buku.jpg') }}" alt="Ruang 3" class="w-full h-48 object-cover rounded mb-4">
+        <!-- <h3 class="font-semibold text-sm mb-2">Ruang 3</h3> -->
         <p class="text-sm text-gray-700">
-            Ruang diskusi kelompok ini dirancang untuk kolaborasi antar pengguna. Dilengkapi papan tulis dan meja bundar, cocok untuk kerja tim dan diskusi akademik maupun non-akademik.
-        </p>
+        Tersedia berbagai koleksi buku yang tertata rapi di rak-rak perpustakaan, mulai dari literatur populer hingga referensi akademik. Pengunjung dapat dengan mudah menemukan bacaan yang sesuai dengan kebutuhan belajar maupun minat pribadi.        </p>
         </div>
 
     </div>
@@ -88,17 +97,28 @@
     
     <!-- Logo & Info -->
     <div class="flex flex-col items-center md:items-start text-center md:text-left">
-      <div class="w-20 h-20 bg-gray-300 rounded-full mb-4 flex items-center justify-center">Logo</div>
-      <p class="font-semibold">Perpustakaan Anime</p>
-      <p class="mt-1">Jl. Komodo Raya No 1, Komodo Selatan,<br>Komodo, 12456</p>
-      <p>Email: perpusanime@gmail.com</p>
+      <img src="{{ asset('img/logo.jpg') }}" class="w-50 h-20 mb-4 flex items-center justify-center">
+      <!-- <div class="w-20 h-20 bg-gray-300 rounded-full mb-4 flex items-center justify-center">Logo</div> -->
+      <p class="font-semibold">Perpustakaan Luffy</p>
+      <p class="mt-1">1 Chome-9-3 Sannomaru, Naka Ward<br>Nagoya, Aichi 460-0001, Japan</p>
+      <p>Email: perpusluffy@gmail.com</p>
       <p>Telp: 089765432102</p>
     </div>
 
     <!-- Maps -->
     <div class="text-center md:text-left">
       <p class="font-semibold mb-2">Maps</p>
-      <div class="w-full aspect-video bg-gray-300 rounded"></div>
+      <div class="w-[450px] h-[200px] rounded overflow-hidden">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.1236725603935!2d136.8952080011449!3d35.17847000146159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376cfce8c6da3%3A0x78a4b5566ce0eb0d!2sAichi%20Prefectural%20Library!5e0!3m2!1sen!2sid!4v1750660580222!5m2!1sen!2sid" 
+          width="100%" 
+          height="100%" 
+          class="border-0" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </div>
 
 <footer class="relative bg-gray-100 px-6 py-10">
@@ -112,7 +132,7 @@
       <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
     <p class="text-right text-sm">
-      Copyright © 2025 Kel 4 Allright Reserved
+      Copyright © 2025 Shelah Allright Reserved
     </p>
 
   </div>

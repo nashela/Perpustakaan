@@ -1,14 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollContainer = document.getElementById('book-scroll');
-  let scrollAmount = 0;
+  const slider = document.getElementById("slider");
+  let currentIndex = 0;
+  const totalSlides = slider.children.length;
 
   setInterval(() => {
-    scrollAmount += 1;
-    if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-      scrollAmount = 0;
-      scrollContainer.scrollLeft = 0;
-    } else {
-      scrollContainer.scrollLeft += 1;
-    }
-  }, 30); // kecepatan scroll, bisa kamu atur (semakin kecil = lebih cepat)
-});
+    currentIndex = (currentIndex + 1) % totalSlides;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 3000);

@@ -23,7 +23,7 @@
     </div>
     <div class="flex items-center gap-4">
       <input type="text" placeholder="Search" class="border rounded px-3 py-1 text-sm" />
-      <button class="rounded-full border p-2">👤</button>
+      <button class="rounded-full border p-2"><a href="/login">👤</a></button>
     </div>
   </header>
 
@@ -32,8 +32,8 @@
   <div class="flex flex-col md:flex-row gap-8 mb-12">
     
     <!-- Gambar Buku -->
-    <div class="w-full md:w-1/3">
-      <img src="https://via.placeholder.com/300x450" alt="Sampul Buku" class="w-full rounded border" />
+    <div class="w-[150px]">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675406904i/96178812.jpg" alt="Sampul Buku" class="w-full rounded border" />
     </div>
     
     <!-- Detail Buku -->
@@ -46,8 +46,8 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet nisl id dolor iaculis suscipit. Nullam vel elit ut velit sollicitudin vehicula. Integer laoreet, nisi at feugiat lacinia, nisi turpis porttitor ligula, ut laoreet risus velit nec orci. Mauris nec felis nec magna iaculis vulputate. Sed a lorem vel justo viverra dignissim.
       </p>
       <div class="flex items-center gap-4">
-        <span class="text-sm">Status: <span class="font-medium">Tersedia</span></span>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">Pinjam</button>
+        <span class="text-sm">Status pinjam: <span class="font-medium">Tersedia</span></span>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">Baca</button>
       </div>
     </div>
   </div>
@@ -57,29 +57,36 @@
     <h3 class="text-lg font-semibold mb-4">Rekomendasi Lainnya</h3>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
       
-      <!-- Buku Rekomendasi -->
-      <div class="text-center">
-        <img src="https://via.placeholder.com/150x220" class="w-full mx-auto border rounded mb-2" alt="Rekomendasi 1">
-        <h4 class="text-sm font-medium">Pungaba Suven Karando</h4>
-        <p class="text-xs italic text-gray-600">Zieja Amear</p>
+<div class="text-center">
+        <a href="/book_detail">
+        <img 
+          src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675406904i/96178812.jpg" 
+          alt="Buku" class="w-[150px] h-auto mx-auto mb-2 border rounded shadow-sm">
+        <h3 class="text-sm font-semibold">Tulus Untuk Orang Yang Salah</h3>
+        <p class="text-xs italic text-gray-600">Boy Candra</p></a>
       </div>
 
       <div class="text-center">
-        <img src="https://via.placeholder.com/150x220" class="w-full mx-auto border rounded mb-2" alt="Rekomendasi 2">
-        <h4 class="text-sm font-medium">Pungaba Suven Karando</h4>
-        <p class="text-xs italic text-gray-600">Zieja Amear</p>
+        <a href="/book_detail">
+        <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/MAAF_TUHAN_AKU_HAMPIR_MENYERAH.jpg"
+        alt="Buku" class="w-[150px] h-auto mx-auto mb-2 border rounded shadow-sm">
+        <h3 class="text-sm font-semibold">Maaf Tuhan, Aku Hampir Menyerah</h3>
+        <p class="text-xs italic text-gray-600">Alfi Alghazi</p></a>
       </div>
 
       <div class="text-center">
-        <img src="https://via.placeholder.com/150x220" class="w-full mx-auto border rounded mb-2" alt="Rekomendasi 3">
-        <h4 class="text-sm font-medium">Pungaba Suven Karando</h4>
-        <p class="text-xs italic text-gray-600">Zieja Amear</p>
+        <a href="/book_detail">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1736474633i/223441713.jpg"
+        alt="Buku" class="w-[150px] h-auto mx-auto mb-2 border rounded shadow-sm">
+        <h3 class="text-sm font-semibold">Seporsi Mie Ayam</h3>
+        <p class="text-xs italic text-gray-600">Brian Khrisna</p></a>
       </div>
-
-      <div class="text-center">
-        <img src="https://via.placeholder.com/150x220" class="w-full mx-auto border rounded mb-2" alt="Rekomendasi 4">
-        <h4 class="text-sm font-medium">Pungaba Suven Karando</h4>
-        <p class="text-xs italic text-gray-600">Zieja Amear</p>
+            <div class="text-center">
+        <a href="/book_detail">
+        <img src="https://cdn.gramedia.com/uploads/items/9786020633176_.Atomic_Habit.jpg"
+        alt="Buku" class="w-[150px] h-auto mx-auto mb-2 border rounded shadow-sm">
+        <h3 class="text-sm font-semibold">Anatomic Habbits</h3>
+        <p class="text-xs italic text-gray-600">James Clear</p></a>
       </div>
     </div>
   </div>
@@ -87,22 +94,33 @@
 
 
 <!-- Footer -->
-<footer class="bg-gray-100 mt-10 px-6 py-10 text-sm text-gray-700">
+<footer class="bg-gray-100 mt-10 px-6 py-10 text-sm text-black">
   <div class="grid md:grid-cols-3 gap-6">
     
     <!-- Logo & Info -->
     <div class="flex flex-col items-center md:items-start text-center md:text-left">
-      <div class="w-20 h-20 bg-gray-300 rounded-full mb-4 flex items-center justify-center">Logo</div>
-      <p class="font-semibold">Perpustakaan Anime</p>
-      <p class="mt-1">Jl. Komodo Raya No 1, Komodo Selatan,<br>Komodo, 12456</p>
-      <p>Email: perpusanime@gmail.com</p>
+      <img src="{{ asset('img/logo.jpg') }}" class="w-50 h-20 mb-4 flex items-center justify-center">
+      <!-- <div class="w-20 h-20 bg-gray-300 rounded-full mb-4 flex items-center justify-center">Logo</div> -->
+      <p class="font-semibold">Perpustakaan Luffy</p>
+      <p class="mt-1">1 Chome-9-3 Sannomaru, Naka Ward<br>Nagoya, Aichi 460-0001, Japan</p>
+      <p>Email: perpusluffy@gmail.com</p>
       <p>Telp: 089765432102</p>
     </div>
 
     <!-- Maps -->
     <div class="text-center md:text-left">
       <p class="font-semibold mb-2">Maps</p>
-      <div class="w-full aspect-video bg-gray-300 rounded"></div>
+      <div class="w-[450px] h-[200px] rounded overflow-hidden">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.1236725603935!2d136.8952080011449!3d35.17847000146159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376cfce8c6da3%3A0x78a4b5566ce0eb0d!2sAichi%20Prefectural%20Library!5e0!3m2!1sen!2sid!4v1750660580222!5m2!1sen!2sid" 
+          width="100%" 
+          height="100%" 
+          class="border-0" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </div>
 
 <footer class="relative bg-gray-100 px-6 py-10">
@@ -116,12 +134,11 @@
       <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
     <p class="text-right text-sm">
-      Copyright © 2025 Kel 4 Allright Reserved
+      Copyright © 2025 Shelah Allright Reserved
     </p>
 
   </div>
 </footer>
-
 
 </body>
 </html>
