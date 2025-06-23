@@ -19,6 +19,7 @@
                class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm" />
       </div>
 
+      <!-- Email -->
     <div>
         <label class="block text-sm text-gray-700 mb-1">Email</label>
         <input type="text" name="username" placeholder="Type your username" required
@@ -38,7 +39,7 @@
                class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm" />
       </div>
 
-      <!-- Login button as link -->
+      <!-- Register button-->
       <a href="/login" class="block text-center w-full py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
         REGISTER
       </a>

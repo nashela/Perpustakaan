@@ -19,6 +19,7 @@
           <a href="/news">News</a>
           <a href="/book">Book</a>
           <a href="/about">About Us</a>
+          <a href="/histori">Histori</a>
         </nav>
     </div>
     <div class="flex items-center gap-4">
@@ -43,13 +44,13 @@
     <div class="text-center">
       <a href="/news_detail">
       <img src="https://siapjak.jakarta.go.id/storage/program/brosur/9f32fc00-b483-405a-9af2-f57112c90d8e.png" alt="Berita" class="w-full h-auto rounded border mb-2" />
-      <h3 class="text-sm font-medium">Light Up With Duta Bach "Pemanfaatan Dan Dampak AI"</h3>l</a>
+      <h3 class="text-sm font-medium">Light Up With Duta Bach "Pemanfaatan Dan Dampak AI"</h3></a>
     </div>
 
     <div class="text-center">
       <a href="/news_detail">
       <img src="https://siapjak.jakarta.go.id/storage/program/brosur/9f32fc00-b483-405a-9af2-f57112c90d8e.png" alt="Berita" class="w-full h-auto rounded border mb-2" />
-      <h3 class="text-sm font-medium">Light Up With Duta Bach "Ekspresikan Pikiranmu Lewat Essai"</h3>l</a>
+      <h3 class="text-sm font-medium">Light Up With Duta Bach "Ekspresikan Pikiranmu Lewat Essai"</h3></a>
     </div>
 
     <div class="text-center">
@@ -67,7 +68,7 @@
     <div class="text-center">
       <a href="/news_detail">
       <img src="https://backend.perpusnas.go.id/uploads/berita/1750169050_3b670f2593f4f68fcbfe.jpeg" alt="Berita" class="w-full h-64 rounded border mb-2" />
-      <h3 class="text-sm font-medium">Perkuat Ekosistem Literasi yang Inklusif dan Berkelanjutan dalam Forum CONSAL 2025 di Malaysia"</h3>l</a>
+      <h3 class="text-sm font-medium">Perkuat Ekosistem Literasi yang Inklusif dan Berkelanjutan dalam Forum CONSAL 2025 di Malaysia"</h3></a>
     </div>
 
   </div>

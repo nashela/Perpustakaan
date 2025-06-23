@@ -19,6 +19,7 @@
           <a href="/news">News</a>
           <a href="/book">Book</a>
           <a href="/about">About Us</a>
+          <a href="/histori">Histori</a>
         </nav>
     </div>
     <div class="flex items-center gap-4">
@@ -51,7 +52,7 @@
         </p>
     </div>
     </section>
-    
+
 <!-- Footer -->
 <footer class="bg-gray-100 mt-10 px-6 py-10 text-sm text-gray-700">
   <div class="grid md:grid-cols-3 gap-6">

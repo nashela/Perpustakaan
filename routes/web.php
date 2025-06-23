@@ -37,3 +37,11 @@ Route::get('/book_detail', function () {
 Route::get('/news_detail', function () {
     return view('news_detail');
 });
+
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/histori', function () {
+    return view('histori');
+});

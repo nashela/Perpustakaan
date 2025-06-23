@@ -19,6 +19,7 @@
           <a href="/news">News</a>
           <a href="/book">Book</a>
           <a href="/about">About Us</a>
+          <a href="/histori">Histori</a>
         </nav>
     </div>
     <div class="flex items-center gap-4">
@@ -46,7 +47,7 @@
     </div>
 
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
       <div class="text-center">
         <a href="/book_detail">
         <img 
@@ -110,6 +111,14 @@
         alt="Buku" class="w-[165px] h-auto mx-auto mb-2 border rounded shadow-sm">
         <h3 class="text-sm font-semibold">Komunikasi Bisnis</h3>
         <p class="text-xs italic text-gray-600">Suwatno</p></a>
+      </div>
+
+      <div class="text-center">
+        <a href="/book_detail">
+        <img src="https://m.media-amazon.com/images/I/81QDxVfY65L._UF1000,1000_QL80_.jpg"
+        alt="Buku" class="w-[165px] h-auto mx-auto mb-2 border rounded shadow-sm">
+        <h3 class="text-sm font-semibold">Tomie</h3>
+        <p class="text-xs italic text-gray-600">Ito Junji</p></a>
       </div>
     </div>
   </section>

@@ -17,6 +17,7 @@
           <a href="/news">News</a>
           <a href="/book">Book</a>
           <a href="/about">About Us</a>
+          <a href="/histori">Histori</a>
         </nav>
     </div>
     <div class="flex items-center gap-4">
